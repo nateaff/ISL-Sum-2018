@@ -56,7 +56,6 @@ Suggested time distribution for weekly tasks:
 3. Exercises and Lab -->
 
 -------
-
 # Week 2: Linear Regression
 
 ## Chapter 3: Linear Regression (slides, playlist)
@@ -87,7 +86,7 @@ Applied:
 
 # Week 3: Introduction to Classification
 
-Chapter 4: Classification (slides, playlist)
+## Chapter 4: Classification (slides, playlist)
 *	Introduction to Classification (10:25)
 *	Logistic Regression and Maximum Likelihood (9:07)
 *	Multivariate Logistic Regression and Confounding (9:53)
