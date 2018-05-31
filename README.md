@@ -20,6 +20,7 @@ This package has some of the datasets and functions used in the Labs and Assignm
 
 ## Datacamp
 
+* [Datacamp's introduction to RStudio](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1)
 * [Datacamp's introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
 
 ## Getting Help
