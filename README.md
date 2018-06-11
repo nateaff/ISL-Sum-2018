@@ -5,6 +5,7 @@
 * [Download R](https://www.r-project.org/)
 * [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
 * _Orientation_ video from [Datacamp's introduction to RStudio](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1)
+* Introduction to [Rmarkdown](https://rmarkdown.rstudio.com/articles_intro.html)
 
 ## Introduction to Statistical Learning(ISL)
 

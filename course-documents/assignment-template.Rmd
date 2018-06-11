@@ -1,0 +1,59 @@
+---
+title: "Assignment Number or Description"
+author: "Your Name"
+date: "June, 1, 2018"
+output: pdf_document
+---
+
+# Assignment Template
+
+
+## 1.
+
+__1a. Load the `College` data set from the ISLR package. How many and what types of variables are in the dataset?__
+
+```{r}
+library(ISLR) 
+data(College) 
+
+# Dimension and data types 
+dim(College)
+str(College)
+```
+
+There are 18 variables. All of them are numeric except "Private" which is a factor (qualitative) variable.
+
+__1b. Plot a histogrami of one of the variables with filled in bars and no border__
+
+
+```{r}
+hist(College$Books, col = "darkcyan", border = "white", xlab = "Books", main = "Histogram of Book Expenses")
+```
+
+# Question 2. 
+
+__2a. Install the `GGally` packages using the command `install.packages("GGally"). (This command only needs to be run once.__
+
+```{r eval=FALSE}
+install.packages("GGally")
+```
+
+__2b. Create a new dataframe with 5 of the variables from the College data set. Plot the correlation structure of this new dataset using the `ggpairs` function from the `GGally` package. Include "Private" as one of the variables in your dataset.__
+
+```{r}
+library(GGally) 
+
+# Subset data to create new dataset 
+new.data <- College[, c("Private", "Apps", "Accept", "Enroll", "Top10perc")]
+
+# Correlation plot
+ggpairs(new.data)
+
+```
+
+__2c. Describe if any of the variables in your plotted subset of the data are correlated. Describe the relationship of the "Private" variable to one of the other variables in your subset.__ 
+
+Applications are positively correlated with the acceptance rate (.91) and the enrollment rate (.87). The number of applications are somewhat positively correlated with a college having a large percent of students in the top 10 percent of their class. The percent of students in the top 10 percent of their class is not highly  correlated with acceptance or enrollment, however, with correlation below .20 for both.
+
+The plots for the "Private" variable show the proportion of private schools vs public schools. The plots also show the distribution of each of the numeric variables for the two classes of schools. The boxplots show that there is a different median number for enrollment for Private vs. Public schools. 
+

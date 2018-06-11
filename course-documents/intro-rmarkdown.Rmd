@@ -1,0 +1,86 @@
+---
+title: "Assignment Number"
+author: "Your Name"
+date: "June, 1, 2018"
+output: pdf_document
+---
+
+
+# Anatomy of an Rmarkdown file 
+
+The main elements of an Rmarkdown document are
+1. The `yaml` header the is usually the first text in an Rmarkdown document. It's separated from the rest of the file by three hyphens: `---`. 
+
+2. The R code chunks. These are chunks of executable R code separated from the rest of the text with three back ticks: 
+
+```{r name-of-chunk}
+# R-code goes here 
+x <- 3 
+y <- 4
+x + y
+```
+
+
+3. The __markdown__ formatted text. This is all the text outside of the R chunsk and the YAML header. 
+
+# Markdown 
+
+Markdown is a 'markup' language that can be used to format text in an Rmarkdown document. 
+
+```
+# Large header 
+## Medium header 
+### Small header 
+
+* _italics_ 
+* **bold** 
+* __bold__ 
+
+`monospaced font` 
+
+* A bullet list
+* of items 
+
+1. A numbered 
+2. List of items
+
+```
+
+
+The markdown shown above generates the following text:
+
+# Large header 
+## Medium header 
+### Small header 
+
+* _italics_ 
+* **bold** 
+* __bold__ 
+
+`monospaced font` 
+
+* A bullet list
+* of items 
+
+1. A numbered 
+2. List of items
+
+
+Those commands will get you most of the formatting you need for the assignments. There are also ways to insert mathematical symbols, tables, and other features. 
+
+## R-chunks 
+
+If you've properly formatted the opening and closing back-ticks of an R chunk, RStudio will highlight the chunk with a slightly different shade of your editor color. 
+
+There are there are three buttons that appear in the upper right corner of the R-chunk:
+1. The gear : this lets you change some of the most commonly used options for that chunk. For example, you can choose to show or not show the code (showing code is the default). If you choose the option _not_ to show the code of the chunk in the output file, an `echo=FALSE` line will be added to the inside of the brackets where your R chunk is declared: `{r, echo=FALSE}`.
+
+Below is an example of a code chunk with the `echo=FALSE` argument. It does not display the code, only the output of the code.
+
+```{r global-options, echo=FALSE}
+# TODO
+# This section sets up global options for your r-chunks. 
+# These options can be overidden in the individual r-chunks
+hist(rnorm(100))
+```
+  
