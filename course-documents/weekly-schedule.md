@@ -43,10 +43,10 @@ Suggested time distribution for weekly tasks:
 
 ## Exercises:
 ### Conceptual:
-1, 2, 4, 7
+1, 2, 4, 5, 7
 
 ### Applied:
-9 (Auto)
+9 (Auto), 8 (College) 
 
 <!-- ----------------
 ## Tutoring :
