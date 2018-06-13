@@ -39,7 +39,9 @@ Suggested time distribution for weekly tasks:
 * Lab: Introduction to R (14:12)
 
 
-### Datacamp: [Intro to R basics](https://www.datacamp.com/courses/free-introduction-to-r)
+### Datacamp: 
+* [Intro to R basics](https://www.datacamp.com/courses/free-introduction-to-r)
+* [Vectors, Matrices](https://www.datacamp.com/courses/free-introduction-to-r)
 
 ## Exercises:
 ### Conceptual:
@@ -66,15 +68,16 @@ Suggested time distribution for weekly tasks:
 * Interactions and Nonlinearity (14:16)
 * Lab: Linear Regression (22:10)
 
-### Datacamp: [Vectors, Matrices](https://www.datacamp.com/courses/free-introduction-to-r)
+### Datacamp: [Factors, Dataframes](https://www.datacamp.com/courses/free-introduction-to-r)
 
 ## Exercises:
 Conceptual
-1, 3, 4
+1, 2, 3, 4
 
 Applied:
 8. (Auto)
 9. (Auto)
+13. (Simulation)
 
 <!--
 ## Tutoring :
@@ -99,7 +102,7 @@ Applied:
 * ~~Lab: Linear Discriminant Analysis (8:22)~~
 * ~~Lab: K-Nearest Neighbors (5:01)~~
 
-### Datacamp: [Factors, Dataframes](https://www.datacamp.com/courses/free-introduction-to-r)
+
 
 ## Exercises:
 
