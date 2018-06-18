@@ -1,0 +1,192 @@
+---
+title: "Test2"
+author: "Nate"
+date: "June 13, 2018"
+output: pdf_document
+---
+
+## This is markdown here 
+f
+# Steps for creating Rmarkdown
+
+1. New File > Text 
+2. Save with .Rmd extension
+
+* Bullet list 
+* with bullet points
+
+_italic_
+**bold**
+
+_ this doesn't work _ 
+
+
+_this does work_ 
+
+
+# Important! 
+
+You can't re-use 'chunk' names. 
+
+```{r 1b}
+# In this section you can only do R -code 
+
+# Generate random normal data
+hist(rnorm(100))
+
+```
+
+
+## New section : Lab 
+
+1. Loading data set 
+2. Run Regression 
+3. Interpretation 
+
+```{r lab}
+library(ISLR)
+library(MASS)
+
+# load data
+data(Boston)
+str(Boston)
+dim(Boston)
+?Boston
+```
+
+### Fit a model 
+
+```{r }
+# Lm formula
+fit.lm1 <- lm(medv ~ crim, data=Boston)
+summary(fit.lm)
+```
+
+Coefficient for crime is -0.415. 
+* Negative relationship
+* Units of crime is per/capital crime rate
+* Units of medv is 1000$ per unit 
+
+Interpretation of coefficient:
+
+**What is the effect on the response 
+variable for a 1-unit change in the predictor variable, 
+holding all other variables constant.**
+
+One unit change in crim (=one percentage change in crime rate)
+corresponds to a DROP of -0.415*1000 in median house values. 
+
+```{r}
+# range of prices
+range(Boston$medv)*1000
+
+```
+
+```{r}
+confint(fit.lm1)
+
+```
+
+```{r}
+# Base R plot with fit model
+plot(Boston$crim, Boston$medv, 
+                  col="darkcyan", 
+                  main="Median housing values vs. Crime")
+abline(fit.lm1, col="gray5")
+
+```
+
+```{r}
+hist(Boston$medv)
+```
+```{r}
+hist(Boston$crim)
+```
+
+The crime rate data looks like an _exponential_ distribution. 
+
+We'll redo the model with the inverse of the exponential, a log transform, and compare the fit. 
+
+```{r}
+fit.lm2 <- lm(medv ~ log(crim), data=Boston) 
+summary(fit.lm2)
+```
+
+The $R^2$ value has imporved to 0.2 from 0.15. 
+
+Below is a plot of the log of the crime rate against house value.
+
+```{r}
+# Base R plot with fit model
+plot(log(Boston$crim), Boston$medv, 
+                  col="darkcyan", 
+                  main="Median housing values vs. Crime")
+abline(fit.lm2, col="gray5", lwd = 2, lty = 2)
+
+```
+
+
+It looks like the higher home values follow a different trend. 
+There seems to be no relation of crime rate to some of the highest priced houses.
+
+```{r}
+Boston2 <- Boston[Boston$medv < 40, ]
+
+fit.lm3 <- lm(medv ~ log(crim), data=Boston2) 
+summary(fit.lm3)
+```
+
+Removing the high priced houses gives us an $R^2$ close to 0.4, almost doubling the previous fit. 
+
+This means that for most housing, crime rates are very closely associated with 
+
+Below is a plot of the log of the crime rate against house value.
+
+```{r}
+# Base R plot with fit model
+plot(log(Boston2$crim), Boston2$medv, 
+                  col="darkcyan", 
+                  main="Median housing values vs. Crime Rate")
+abline(fit.lm3, col="gray5", lwd = 2, lty = 2)
+
+```
+
+What about the higher priced houses that we omitted from the above analysis? 
+
+```{r}
+Boston3 <- Boston[Boston$medv > 40, ]
+
+fit.lm4 <- lm(medv ~ log(crim), data=Boston3) 
+summary(fit.lm4)
+```
+
+The results confirm that there is no relationship between the highest priced houses and crime. 
+This result doesn't seem that intuitive and to me it would make it worth looking at the actual data to see if
+there is a problem with the data. 
+
+
+
+```{r}
+# Base R plot with fit model
+plot(log(Boston3$crim), Boston3$medv, 
+                  col="darkcyan", 
+                  main="Median housing values vs. Crime Rate")
+abline(fit.lm4, col="gray5", lwd = 2, lty = 2)
+```
+
+
+The suspicious looking data points are all at 50K 
+
+```{r}
+library(GGally)
+suspect <- Boston[Boston$medv == 50, ]
+#ggpairs(suspect)
+names(suspect) <- paste0("X", 1:ncol(suspect))
+#pairs(suspect)
+
+```
+
+
+
+
+

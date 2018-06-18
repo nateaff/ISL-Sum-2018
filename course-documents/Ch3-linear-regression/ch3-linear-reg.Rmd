@@ -30,7 +30,7 @@ y <- fx(x)
 plot(x=x, y=y, col = "darkviolet", main="Sample of simulated data")
 
 # Add a line to the plot
-lines(x,y, col = "gray5", lwd = 2)
+lines(x,y, col = "gray5", lwd = 2)a
 
 ```
   
