@@ -39,7 +39,7 @@ Suggested time distribution for weekly tasks:
 * Lab: Introduction to R (14:12)
 
 
-### Datacamp: 
+### Datacamp:
 * [Intro to R basics](https://www.datacamp.com/courses/free-introduction-to-r)
 * [Vectors, Matrices](https://www.datacamp.com/courses/free-introduction-to-r)
 
@@ -48,7 +48,7 @@ Suggested time distribution for weekly tasks:
 1, 2, 4, 5, 7
 
 ### Applied:
-9 (Auto), 8 (College) 
+9 (Auto), 8 (College)
 
 <!-- ----------------
 ## Tutoring :
@@ -97,10 +97,10 @@ Applied:
 *	Linear Discriminant Analysis and Bayes Theorem (7:12)    		
 *	Univariate Linear Discriminant Analysis (7:37)  				
 * ~~Multivariate Linear Discriminant Analysis and ROC Curves (17:42)~~
-* ~~Quadratic Discriminant Analysis and Naive Bayes (10:07)~~
-* 	Lab: Logistic Regression (10:14)
-* ~~Lab: Linear Discriminant Analysis (8:22)~~
-* ~~Lab: K-Nearest Neighbors (5:01)~~
+* Quadratic Discriminant Analysis and Naive Bayes (10:07)
+* Lab: Logistic Regression (10:14)
+* Lab: Linear Discriminant Analysis (8:22)
+* Lab: K-Nearest Neighbors (5:01)
 
 
 
@@ -108,12 +108,14 @@ Applied:
 
 ###  Conceptual
 1. (logistic function)
-6. (logisitic regression)
+6. (logistic regression)
+8. (KNN and logistic regression)
 9. (Odds)   
 
 ### Applied:
-10. (Weekly)  (skip LDA and KDA)
-12. (Write a fnction)
+10. (Weekly)
+12. (Write a function)
+13. (Boston -- Choose at least two models)
 
 <!--
 ## Tutoring :
