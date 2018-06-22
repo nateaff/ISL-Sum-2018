@@ -111,9 +111,7 @@ Applied:
 
 
 ### Applied:
-10. (Weekly)
-12. (Write a function)
-13. (Boston -- Choose at least two models)
+10, 12, 13
 
 <!--
 ## Tutoring :
