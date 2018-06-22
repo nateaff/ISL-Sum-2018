@@ -107,10 +107,8 @@ Applied:
 ## Exercises:
 
 ###  Conceptual
-1. (logistic function)
-6. (logistic regression)
-8. (KNN and logistic regression)
-9. (Odds)   
+1, 6, 8, 9
+
 
 ### Applied:
 10. (Weekly)
