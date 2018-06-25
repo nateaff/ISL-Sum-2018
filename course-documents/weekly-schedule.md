@@ -103,6 +103,7 @@ Applied:
 * Lab: K-Nearest Neighbors (5:01)
 
 
+### Datacamp: [Lists](https://www.datacamp.com/courses/free-introduction-to-r)
 
 ## Exercises:
 
@@ -131,16 +132,21 @@ Applied:
 * Lab: Cross-Validation (11:21)
 * Lab: The Bootstrap (7:40)
 
-### Datacamp: [Lists](https://www.datacamp.com/courses/free-introduction-to-r)
+
+### Datacamp: [Functions](https://www.datacamp.com/courses/writing-functions-in-r)
+
+The first set of videos is free and should cover the basics of writing a function.
+
+[Software Carpentry](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/) also has a introductory tutorial on function writing.
+
 
 ## Exercises:
 ### Conceptual:
-3. (K-fold cross-validation)
-4. (Bootstrap)
+
+3, 4
 
 ### Applied:
-5. (Default, Logistic Regression and Cross-validation)
-7. (Weekly, LOOCV loop)
+5, 7
 
 --------
 
