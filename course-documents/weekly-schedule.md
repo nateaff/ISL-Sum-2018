@@ -173,11 +173,10 @@ The first set of videos is free and should cover the basics of writing a functio
 ## Exercises:
 ### Conceptual
 1. (Subset selection)
-2. (Lasso) (skip 2c.)
+2. (Lasso)
 
 ### Applied
-8. (Simulated, subset selection)
-10. (Simulated, train vs. test error)
+8 (Simulated, subset selection), 11 (Boston)
 
 --------
 
