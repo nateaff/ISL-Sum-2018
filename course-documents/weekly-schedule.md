@@ -160,7 +160,9 @@ The first set of videos is free and should cover the basics of writing a functio
 * Estimating Test Error Using Cross-Validation (8:43)
 * Shrinkage Methods and Ridge Regression (12:37)
 * The Lasso (15:21)													
-* Tuning Parameter Selection for Ridge Regression and Lasso (5:27)  
+* Tuning Parameter Selection for Ridge Regression
+
+ and Lasso (5:27)  
 * ~~Dimension Reduction (4:45)~~
 * ~~Principal Components Regression and Partial Least Squares (15:48)~~
 * ~~Lab: Best Subset Selection (10:36)~~
@@ -172,8 +174,7 @@ The first set of videos is free and should cover the basics of writing a functio
 
 ## Exercises:
 ### Conceptual
-1. (Subset selection)
-2. (Lasso)
+1 (Subset selection), 2 (Lasso)
 
 ### Applied
 8 (Simulated, subset selection), 11 (Boston)
@@ -194,12 +195,10 @@ The first set of videos is free and should cover the basics of writing a functio
 
 ## Exercises:
 ### Conceptual
-4. (Trees)
-5. (Random Forest)
+4 (Trees), 5 (Random Forest)
 
 ### Applied
-7. (Boston, Random Forests)
-9. (OJ, Trees)
+7 (Boston, Random Forests), 9 (OJ, Trees)
 
 ### Project:
 * Write up proposal for project
@@ -224,11 +223,10 @@ The first set of videos is free and should cover the basics of writing a functio
 
 ## Exercises:
 ### Conceptual
-2. (Hierarchical Clustering)
-3. (Manual Kmeans)
+2 (Hierarchical Clustering), 3 (Manual Kmeans)
 
 ### Applied
-9. (USArrests, Hierarchical Clustering)
+9 (USArrests, Hierarchical Clustering)
 
 ### Project
 * Begin analysis
